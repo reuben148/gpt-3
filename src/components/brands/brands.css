@@ -1,0 +1,37 @@
+.gpt3__brand {
+    display: grid;
+    gap: 2rem; 
+    padding: 2rem 5%;
+}
+
+/* Default: Small screens (1 column) */
+.gpt3__brand {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Medium screens: 3 columns */
+@media (min-width: 768px) {
+    .gpt3__brand {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large screens: 5 columns */
+@media (min-width: 1024px) {
+    .gpt3__brand {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.gpt3__brand div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__brand img {
+    width: 100%;
+    max-width: 150px; /* Keeps images manageable */
+    height: auto;
+    object-fit: contain;
+}
