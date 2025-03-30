@@ -1,10 +1,10 @@
-import React from 'react';
-import './brand.css';
+import React from 'react'
+import 'brand.css'
 
-const Brand = () => {
+const brand = () => {
   return (
     <div className='gpt3__brand section__padding'>
-        <div>
+       <div>
           <img src="/google.png" alt="" />
         </div>
         <div>
@@ -19,8 +19,8 @@ const Brand = () => {
         <div>
           <img src="/shopify.png" alt="" />
         </div>
-      </div>
+    </div>
   )
 }
 
-export default Brand
+export default brand
